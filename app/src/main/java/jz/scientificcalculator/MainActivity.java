@@ -96,7 +96,14 @@ public class MainActivity extends ActionBarActivity
     public void equalsClick(View view)
     {
         firstOp = true;
-        second = Double.parseDouble(display.getText().toString());
+        if(display.getText().toString().equals(""))
+        {
+            second = 0;
+        }
+        else
+        {
+            second = Double.parseDouble(display.getText().toString());
+        }
         Button button;
         switch (operation)
         {
@@ -119,6 +126,9 @@ public class MainActivity extends ActionBarActivity
                 first *= second;
                 button = (Button) findViewById(R.id.Multiply);
                 button.setBackgroundColor(Color.LTGRAY);
+                break;
+            default:
+                first = second;
                 break;
         }
 
