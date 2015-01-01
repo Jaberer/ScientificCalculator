@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
@@ -82,7 +83,7 @@ public class MainActivity extends ActionBarActivity
         {
             b.setBackgroundColor(Color.LTGRAY);
         }
-        button.setBackgroundColor(Color.rgb(34,98,219));
+        button.setBackgroundColor(Color.rgb(34, 98, 219));
         switch (view.getId())
         {
             case R.id.Add:
@@ -142,6 +143,29 @@ public class MainActivity extends ActionBarActivity
 
         display.setText(first + "");
         operation = Operation.NONE;
+    }
+
+    /*
+    public void equalsTouch(View view)
+    {
+        Button button = (Button)view;
+
+    }
+*/
+    //yourButton.setOnTouchListener( yourListener );
+
+    public boolean onTouch(View v, MotionEvent event)
+    {
+        switch(event.getAction())
+        {
+            case MotionEvent.ACTION_DOWN:
+                // Do something
+                return true;
+            case MotionEvent.ACTION_UP:
+                // No longer down
+                return true;
+        }
+        return false;
     }
 
     @Override

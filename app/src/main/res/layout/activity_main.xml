@@ -34,6 +34,7 @@
             android:text="."
             android:textSize="28sp"
             android:onClick="numberClick"
+            android:onTouch="numberTouch"
             android:background="#cccccc" />
         <Button
             android:id="@+id/Zero"
@@ -43,6 +44,7 @@
             android:layout_weight="0.25"
             android:text="0"
             android:textSize="28sp"
+            android:onTouch="numberTouch"
             android:onClick="numberClick"
             android:background="#cccccc" />
         <Button
@@ -54,6 +56,7 @@
             android:text="="
             android:textSize="28sp"
             android:onClick="equalsClick"
+            android:onTouch="equalsTouch"
             android:background="#cccccc" />
         <Button
             android:id="@+id/Add"
@@ -64,6 +67,7 @@
             android:text="+"
             android:textSize="28sp"
             android:onClick="operationClick"
+            android:onTouch="operationTouch"
             android:background="#cccccc" />
     </LinearLayout>
 
@@ -86,6 +90,7 @@
             android:text="1"
             android:textSize="28sp"
             android:onClick="numberClick"
+            android:onTouch="numberTouch"
             android:background="#cccccc" />
 
         <Button
@@ -97,6 +102,7 @@
             android:text="2"
             android:textSize="28sp"
             android:onClick="numberClick"
+            android:onTouch="numberTouch"
             android:background="#cccccc" />
 
         <Button
@@ -108,6 +114,7 @@
             android:text="3"
             android:textSize="28sp"
             android:onClick="numberClick"
+            android:onTouch="numberTouch"
             android:background="#cccccc" />
 
         <Button
@@ -119,6 +126,7 @@
             android:text="-"
             android:textSize="28sp"
             android:onClick="operationClick"
+            android:onTouch="operationTouch"
             android:background="#cccccc" />
     </LinearLayout>
 
@@ -140,6 +148,7 @@
             android:layout_weight="0.25"
             android:text="4"
             android:onClick="numberClick"
+            android:onTouch="numberTouch"
             android:textSize="28sp"
             android:background="#cccccc" />
 
@@ -151,6 +160,7 @@
             android:layout_weight="0.25"
             android:text="5"
             android:onClick="numberClick"
+            android:onTouch="numberTouch"
             android:textSize="28sp"
             android:background="#cccccc" />
 
@@ -161,6 +171,7 @@
             android:layout_gravity="bottom"
             android:layout_weight="0.25"
             android:onClick="numberClick"
+            android:onTouch="numberTouch"
             android:text="6"
             android:textSize="28sp"
             android:background="#cccccc" />
@@ -172,6 +183,7 @@
             android:layout_gravity="bottom"
             android:layout_weight="0.25"
             android:onClick="operationClick"
+            android:onTouch="operationTouch"
             android:text="*"
             android:textSize="28sp"
             android:background="#cccccc" />
@@ -194,6 +206,7 @@
             android:layout_gravity="bottom"
             android:layout_weight="0.25"
             android:onClick="numberClick"
+            android:onTouch="numberTouch"
             android:text="7"
             android:textSize="28sp"
             android:background="#cccccc" />
@@ -205,6 +218,7 @@
             android:layout_gravity="bottom"
             android:layout_weight="0.25"
             android:onClick="numberClick"
+            android:onTouch="numberTouch"
             android:text="8"
             android:textSize="28sp"
             android:background="#cccccc" />
@@ -216,6 +230,7 @@
             android:layout_gravity="bottom"
             android:layout_weight="0.25"
             android:onClick="numberClick"
+            android:onTouch="numberTouch"
             android:text="9"
             android:textSize="28sp"
             android:background="#cccccc" />
@@ -227,6 +242,7 @@
             android:layout_gravity="bottom"
             android:layout_weight="0.25"
             android:onClick="operationClick"
+            android:onTouch="operationTouch"
             android:text="/"
             android:textSize="28sp"
             android:background="#cccccc" />
