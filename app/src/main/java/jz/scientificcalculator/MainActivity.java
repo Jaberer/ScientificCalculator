@@ -21,7 +21,8 @@ public class MainActivity extends ActionBarActivity
     private Operation operation;
     private double first;
     private double second;
-    private Button decimal;
+    //private Button decimal;
+    private Button[] operationsArray;
     private boolean firstOp;
 
     private enum Operation
@@ -39,8 +40,12 @@ public class MainActivity extends ActionBarActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         display = (TextView) findViewById(R.id.display);
+        operationsArray = new Button[]
+        {
+            (Button) findViewById(R.id.Add), (Button) findViewById(R.id.Subtract),
+            (Button) findViewById(R.id.Divide), (Button) findViewById(R.id.Multiply)
+        };
         operation = Operation.NONE;
-        decimal = (Button) findViewById(R.id.Decimal);
         firstOp = true;
     }
 
@@ -73,7 +78,10 @@ public class MainActivity extends ActionBarActivity
         {
             first = Double.parseDouble(display.getText().toString());
         }
-
+        for(Button b : operationsArray)
+        {
+            b.setBackgroundColor(Color.LTGRAY);
+        }
         button.setBackgroundColor(Color.rgb(34,98,219));
         switch (view.getId())
         {
